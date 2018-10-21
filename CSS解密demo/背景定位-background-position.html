@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+
+            /* IE8 及以下 ，background-position 不会生效 左上角  */
+            /* 设置回退机制 */
+            background: url('../images/bgc-pit.png') no-repeat  bottom right;
+            background-position: right 50px bottom 30px;
+            background-color: purple
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>
