@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 400px;
+            width: 400px;
+            border: 1px solid #ccc;
+        }
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            border: 10px solid red;
+            border-radius: 50%;
+            /* margin-top 相对于父级元素的宽度 */
+            /* 这种居中方式只适合父级元素高和宽一致的情况 */
+            margin-top: 50%;
+            /* transform: translateY(-50%); */
+            /* margin-left 相对于最近的块级元素的宽度 */
+            margin-left: 50%;
+            /* transform: translateX(-50%); */
+            /* transform会覆盖  所以使用下面这种方式 */
+            transform: translate(-50%, -50%);
+            /* box-shadow insert(内阴影) x-offset y-offset 模糊半径(控制模糊程度) 拓展半径(控制阴影大小) color */
+            /* 不占据空间 支持多种方式 虚线 */
+            /* 不能跟着整体变化 */
+            outline: 10px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+</html>

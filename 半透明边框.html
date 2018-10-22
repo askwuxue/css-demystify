@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #dv {
+            width: 400px;
+            height: 200px;
+            border: 10px solid black;
+            position: relative;
+            background-color: #ccc;
+        }
+        #dv2 {
+            width: 50%;
+            height: 50%;
+            background-color: #ccc;
+            margin: auto;
+            border: 10px solid rgba(255, 255, 255, 0.5);
+            background: white;
+            /* 默认是 border-box 背景会被border 的边框的外边沿裁减掉 */
+            /* 必须要有外部div的背景的承托 不然显示不出效果 */
+            background-clip: padding-box;
+            /* background-clip: content-box; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="dv">
+        <div id="dv2">随便写点东西</div>
+    </div>
+    <!-- 给边框设置边框的透明的时候，会被吞噬，设置background-clip: padding-box -->
+</body>
+</html>
