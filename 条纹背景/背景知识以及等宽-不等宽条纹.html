@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+<side-or-corner>
+描述渐变线的起始点位置。它包含两个关键词：第一个指出垂直位置left or right，第二个指出水平位置top or bottom。关键词的先后顺序无影响，且都是可选的。
+to top, to bottom, to left 和 to right这些值会被转换成角度0度、180度、270度和90度。其余值会被转换为一个以向顶部中央方向为起点顺时针旋转的角度。渐变线的结束点与其起点中心对称。
+<angle>
+用角度值指定渐变的方向（或角度）。角度顺时针增加。 
+<color-stop>
+由一个<color>值组成，并且跟随着一个可选的终点位置（可以是一个百分比值或者是沿着渐变轴的<length>）。CSS渐变的颜色渲染采取了与SVG相同的规则。
+         */
+
+         /* 
+         background-size 设置背景图片大小。图片可以保有其原有的尺寸，或者拉伸到新的尺寸，或者在保持其原有比例的同时缩放到元素的可用空间的尺寸。
+          */
+        div {
+            width: 400px;
+            height: 200px;
+            /* linear-gradient 函数 实现渐变 起始位置 to-top . . .   */
+            /* 两个颜色的百分比是从第一个百分比到第二个百分比之间进行过度 */
+            /* background: linear-gradient(to top, #fb3 50%, #58a 50%); */
+            /* 不等宽条纹 */
+            /* background: linear-gradient(to top, #fb3 30%, #58a 0);
+            background-size: 100% 30px; */
+
+            /* 等宽条纹 */
+            background: linear-gradient(to top, #fb3 50%, #58a 50%);
+            /* background-size */
+            background-size: 100% 30px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

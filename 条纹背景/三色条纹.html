@@ -7,15 +7,13 @@
     <title>Document</title>
     <style>
         div {
-            width: 300px;
+            width: 400px;
             height: 200px;
-            background: #58a;
-            /* 渐变效果给一个角度值 */
-            background: 
-                linear-gradient(-45deg, transparent 15px, #58a 0);
+            /* 三色条纹   对于background 的 linear-gradient () 的使用 */
+            background: linear-gradient(to bottom, #fb3 33.3%, #58a 0, #58a 66.8%, purple 0);
+            /* background-size */
+            background-size: 100% 30px;
         }
-
-
     </style>
 </head>
 <body>

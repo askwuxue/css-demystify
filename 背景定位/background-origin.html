@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            /* border: 1px dashed #000; */
+            border: 30px solid purple;
+            padding: 20px;
+            /* 设置回退机制 有的浏览器可能不支持 background-position */
+            background: url('../images/bgc-pit.png') no-repeat bottom right #585858;
+            /* background-position: right 20px bottom 20px; */
+            /* 这种方式适合距离与padding一样的情况 background-origin 默认是根据padding-box 对齐，不会被边框遮盖 */
+            background-origin: content-box;
+        }
+
+
+
+        /* background-clip、background-color、background-image、background-origin、background-position、background-repeat、background-size，和 background-attachment。 */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 400px;
+            width: 400px;
+            border: 1px solid #ccc;
+        }
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* border: 10px solid red; */
+            /* border-radius: 50%; */
+            /* margin-top 相对于父级元素的宽度 */
+            /* 这种居中方式只适合父级元素高和宽一致的情况 */
+            margin-top: 50%;
+            /* transform: translateY(-50%); */
+            /* margin-left 相对于最近的块级元素的宽度 */
+            margin-left: 50%;
+            /* transform: translateX(-50%); */
+            /* transform会覆盖  所以使用下面这种方式 */
+            transform: translate(-50%, -50%);
+            /* box-shadow insert(内阴影) x-offset y-offset 模糊半径(控制模糊程度) 拓展半径(控制阴影大小) color */
+            /* 不占据空间 支持多种方式 虚线 */
+            /* 不能跟着整体变化 */
+            outline: 2px dashed #ccc;
+            outline-offset: -5px;
+
+            /* 
+none
+和关键字 hidden 类似，不显示边框。在这种情况下，如果没有设定背景图片，border-width 计算后的值将是 0，即使先前已经指定过它的值。在单元格边框重叠情况下，none 值优先级最低，意味着如果存在其他的重叠边框，则会显示为那个边框。
+hidden	
+和关键字 none 类似，不显示边框。在这种情况下，如果没有设定背景图片，border-width 计算后的值将是 0，即使先前已经指定过它的值。在单元格边框重叠情况下，hidden 值优先级最高，意味着如果存在其他的重叠边框，边框不会显示。
+dotted	
+显示为一系列圆点。标准中没有定义两点之间的间隔大小，视不同实现而定。圆点半径是 border-width 计算值的一半。
+dashed	
+显示为一系列短的方形虚线。标准中没有定义线段的长度和大小，视不同实现而定。
+solid	
+显示为一条实线。
+double	
+显示为一条双实线，宽度是 border-width 。
+groove	
+显示为有雕刻效果的边框，样式与 ridge 相反。
+ridge	
+显示为有浮雕效果的边框，样式与 groove 相反。
+inset	
+显示为有陷入效果的边框，样式与 outset 相反。当它指定到 border-collapse 为 collapsed 的单元格时，会显示为 groove 的样式。
+outset	
+显示为有突出效果的边框，样式与 inset 相反。当它指定到 border-collapse 为 collapsed 的单元格时，会显示为 ridge 的样式。 */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+</html>

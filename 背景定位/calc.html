@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 1px dashed #000;
+            /* 设置回退机制 有的浏览器可能不支持 background-position */
+            background: url('../images/bgc-pit.png') no-repeat bottom right #585858;
+            /* 背景定位 */
+            /* background-position: right 20px bottom 20px; */
+            /* 使用 calc 函数 + - 与运算数之间必须有空格 calc中嵌套的calc相当于一个括号 */
+            background-position: calc(100% - 20px) calc(100% - 10px);
+        }
+        /* background-clip、background-color、background-image、background-origin、background-position、background-repeat、background-size，和 background-attachment。 */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
