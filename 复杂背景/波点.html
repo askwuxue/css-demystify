@@ -9,7 +9,6 @@
         /* 
         CSS radial-gradient() 函数创建一个<image>，用来展示由原点（渐变中心）辐射开的颜色渐变。这个方法得到的是一个CSS<gradient>数据类型的对象。
          */
-
         #dv {
             width: 300px;
             height: 300px;
@@ -22,9 +21,10 @@
         #div {
             margin-top: 20px;
             /* border: 1px solid red; */
-            background-color: #655;
+            /* background-color: black; */
             width: 200px;
             height: 200px;
+            /* transparent 的原理是继承当前的背景色  */
             background-image: radial-gradient(red 70%, transparent 0);
             background-size: 100% 100%;
         }
